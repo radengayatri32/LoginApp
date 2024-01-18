@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/image_view"
+        android:layout_width="match_parent"
+        android:layout_height="310dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/image_2" />
+
+    <ImageView
+        android:id="@+id/rectangle_2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleX="@integer/material_motion_duration_long_2"
+        android:layout_marginTop="150dp"
+
+        android:src="@drawable/rectangle_2" />
+
+    <TextView
+        android:id="@+id/tv_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        android:text="Login"
+        android:textSize="30dp"
+
+        android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+
+
+    <EditText
+        android:id="@+id/et_email"
+        android:layout_width="331dp"
+        android:layout_height="65dp"
+        android:layout_below="@+id/tv_login"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/rectangle_3"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="20dp"
+        android:textSize="15dp" />
+
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_centerHorizontal="true"
+        android:textSize="15dp"
+        android:layout_width="331dp"
+        android:layout_height="65dp"
+        android:layout_below="@+id/et_email"
+        android:layout_marginTop="16dp"
+        android:paddingLeft="20dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:background="@drawable/rectangle_3"/>
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="343dp"
+        android:layout_height="84dp"
+        android:layout_below="@+id/et_password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/rectangle_5"
+        android:paddingBottom="7dp"
+        android:text="Login"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textViewActivation"
+        android:layout_below="@+id/btn_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Belum terdaftar? Silahkan aktivasi akun"
+        android:textSize="15dp"
+        android:layout_gravity="center_horizontal"/>
+
+</RelativeLayout>
